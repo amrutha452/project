@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+  background-color: blue;
+}
+
+/* home.js */
+/* <---nav bar --? */
+
+.homecss{
+  background-color: aliceblue;
+height:100vh;
+background-image: url('https://media.istockphoto.com/photos/ladder-3d-rendering-on-blue-background-picture-id1194645090?k=6&m=1194645090&s=170667a&w=0&h=PspbYF-Bzk3RvoRhAXG4bUc_ye1xtow7vW0S8rm2wtE=');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+.navbar{
+margin:0px 20px;
+
+
+}
+.navbar h2{
+  margin-top: 7px;
+}
+
+.nav-ul{
+display:flex;
+column-gap: 35px;
+margin-right: 100px;
+
+
+}
+.nav-ul li{
+  font-size: 25px;
+  font-weight: 3px;
+  margin-top: 10px;
+}
+.btncss1{
+  margin:5px 5px;
+  width:110px;
+  height: 45px;
+  border: none;
+  position: relative;
+  animation:btncss1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  border-radius: 40px;
+color:#fff;
+transition: transform 1s;
+background:linear-gradient(90deg,#0162c8,#55e7fc) ;
+}
+
+@keyframes btncss1{
+  0%{
+    left:-110px;
+  }
+  100%{
+    left:0px;
+  }
+}
+
+@keyframes btncss2{
+  0%{
+    right:-110px;
+  }
+  100%{
+    right:0px;
+  }
+}
+
+.btncss2{
+  margin:5px 5px;
+  width:110px;
+  height: 45px;
+  border: none;
+  border-radius: 40px;
+  color:#fff;
+  position: relative;
+  animation:btncss2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transition: transform 1s;
+background:linear-gradient(90deg,#755bea,#ff72c0) ;
+}
+
+.btncss1:hover,.btncss2:hover{
+transform:translate(-5px,-5px);
+}
+
+.nav-ul li:hover{
+  font-weight: bold;
+}
+
+li{
+  list-style-type:none;
+ 
+}
+.titlecss{
+  position: relative;
+  animation:title;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.titleslogan{
+  position: relative;
+  animation:titles;
+  font-size: 20px;
+  animation-duration: 2s;
+  opacity: 0;
+  animation-delay: 1.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title{
+  0%{
+    top:-110px;
+  }
+  100%{
+    top:10px;
+  }
+}
+
+@keyframes titles{
+  0%{
+   opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.landing{
+margin-top: 3%;;
+
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
